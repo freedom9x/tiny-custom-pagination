@@ -1,5 +1,5 @@
 {
  "private": true,
- "name": "tiny-pagination",
+ "name": "tiny-custom-pagination",
  "main": "./TinyPagination.js"
 }
