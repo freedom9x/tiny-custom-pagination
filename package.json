@@ -1,6 +1,6 @@
 {
   "name": "tiny-custom-pagination",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "dependencies": {
     "autoprefixer": "7.1.2",
@@ -97,10 +97,10 @@
     "extends": "react-app"
   },
   "author": "freedom9x<freedom9x.@gmail.com>",
-  "homepage": "https://github.com/catamphetamine/react-responsive-ui#readme",
+  "homepage": "https://github.com/freedom9x/tiny-custom-pagination",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/catamphetamine/react-responsive-ui.git"
+    "url": "git+https://github.com/freedom9x/tiny-custom-pagination.git"
   }
 }
