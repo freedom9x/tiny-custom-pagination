@@ -5,7 +5,11 @@ import PropTypes from 'prop-types';
 class TinyPagination extends React.Component {
 
   renderIndexFromTo(total, selectedPageId, itemPerPage){
-    let startIndex = (selectedPageId - 1) * itemPerPage + 1;
+    let startIndex = 0;
+    if(total > 0){
+      startIndex = (selectedPageId - 1) * itemPerPage + 1;
+    }
+    
     let endIndex = 1;
     if((selectedPageId * itemPerPage) >  total){
       endIndex = total;
@@ -33,6 +37,7 @@ class TinyPagination extends React.Component {
   }
 
   renderBtnNumbers(totalBtns, selectedPageId, maxBtnNumbers, maxBtnPerSide){
+    let {spreadClass, spreadStyle} = this.props;
     let btns = [];
     if(totalBtns < maxBtnNumbers){
       for(let i = 1; i <= totalBtns; i++){
@@ -63,24 +68,55 @@ class TinyPagination extends React.Component {
       if(number > 0 ){
         return this.props.renderBtnNumber(number)
       }else{
-        return <span key = {number}>...</span>
+        return (
+        <div key = {number}
+          className = {`spread ${spreadClass ? spreadClass: ''}`}
+          style = {spreadStyle}
+        >
+          ...
+        </div>
+      )
       }
     });
   }
 
   render() {
-    let {total, selectedPageId, itemPerPage, maxBtnNumbers} = this.props;
+    let {
+      total, 
+      selectedPageId, 
+      itemPerPage, 
+      maxBtnNumbers, 
+      wrapStyle, 
+      wrapClass,
+      counterClass,
+      counterStyle,
+      btnsClass,
+      btnsStyle
+    } = this.props;
     let totalBtns = parseInt(total / itemPerPage, 0);
     totalBtns = (totalBtns * itemPerPage) < total ? totalBtns + 1: totalBtns;
     const maxBtnPerSide = 2;
-    return (
-      <div className = 'tiny-pagination-container'>
-        <div>
+    if(total === 0){
+      return null;
+    }else return (
+      <div className = {`tiny-pagination-container ${wrapClass ? wrapClass : ''}`}
+        style = {wrapStyle}
+      > 
+        <div className = {`counter-container ${counterClass ? counterClass : ''}`} 
+          style = {counterStyle}
+        >
           {this.renderIndexFromTo(total, selectedPageId, itemPerPage)}
         </div>
-        <div className = 'btns-number-container'>
+        <div className = {`btns-number-container ${btnsClass}`}
+          style = {btnsStyle}
+        >
           {this.renderPreBtn(totalBtns, selectedPageId)}
-          {this.renderBtnNumbers(totalBtns, selectedPageId, maxBtnNumbers, maxBtnPerSide)}
+          {this.renderBtnNumbers(
+            totalBtns, 
+            selectedPageId, 
+            maxBtnNumbers, 
+            maxBtnPerSide)
+          }
           {this.renderNextBtn(totalBtns, selectedPageId)}
         </div>
       </div>
@@ -92,7 +128,16 @@ TinyPagination.propTypes = {
   selectedPageId: PropTypes.number.isRequired,
   itemPerPage: PropTypes.number.isRequired,
   renderBtnNumber: PropTypes.func.isRequired,
-  maxBtnNumbers: PropTypes.number.isRequired
+  maxBtnNumbers: PropTypes.number.isRequired,
+  wrapStyle : PropTypes.object,
+  wrapClass : PropTypes.string,
+  counterClass : PropTypes.string,
+  counterStyle : PropTypes.object,
+  btnsClass : PropTypes.string,
+  btnsStyle : PropTypes.object,
+  spreadClass: PropTypes.string,
+  spreadStyle: PropTypes.object
+  
 };
 
 export default TinyPagination

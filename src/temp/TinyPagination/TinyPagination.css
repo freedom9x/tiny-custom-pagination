@@ -13,3 +13,11 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.counter-container{
+    font-size: 11px;
+}
+
+.spread{
+    display: inline-block;
+}

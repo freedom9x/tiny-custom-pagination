@@ -1,7 +1,7 @@
 import React from 'react'
-// import TinyPagination from 'components/TinyPagination'
+import TinyPagination from 'components/TinyPagination'
 // import TinyPagination from './node_modules/components/TinyPagination'
-import TinyPagination from './temp/TinyPagination/TinyPagination';
+// import TinyPagination from './temp/TinyPagination/TinyPagination';
 import './App.css'
 class App extends React.Component {
 
@@ -66,6 +66,14 @@ class App extends React.Component {
           itemPerPage = {itemPerPage}
           renderBtnNumber = {this.renderBtnNumber}
           maxBtnNumbers = {maxBtnNumbers}
+          wrapStyle = {{backgroundColor: '#ffffff'}}
+          wrapClass = 'page-container'
+          btnsClass = 'btns-container'
+          btnsStyle = {{border: '1px solid black'}}
+          counterClass = 'counter-container'
+          counterStyle = {{color: 'gray'}}
+          spreadClass = 'spread-container'
+          spreadStyle = {{padding: '0 5px'}}
         />
       </div>
     )
@@ -76,7 +84,7 @@ App.defaultProps = {
   selectedPageId: 1,
   list: [
     {name: 'item 1'},{name: 'item 2'},{name: 'item 3'},{name: 'item 4'},{name: 'item 5'},{name: 'item 6'},{name: 'item 7'},{name: 'item 8'},{name: 'item 9'},{name: 'item 10'},{name: 'item 11'},{name: 'item 12'},{name: 'item 13'},{name: 'item 14'},{name: 'item 15'},{name: 'item 16'},{name: 'item 17'},{name: 'item 18'},{name: 'item 19'},{name: 'item 20'},{name: 'item 21'},{name: 'item 22'},{name: 'item 23'},{name: 'item 24'},{name: 'item 25'},{name: 'item 26'},{name: 'item 27'},{name: 'item 28'},{name: 'item 29'},{name: 'item 30'},{name: 'item 31'},{name: 'item 32'},{name: 'item 33'},{name: 'item 34'},{name: 'item 35'},{name: 'item 36'},{name: 'item 37'},{name: 'item 38'},{name: 'item 39'},{name: 'item 40'},{name: 'item 41'},{name: 'item 42'},{name: 'item 43'},{name: 'item 44'},{name: 'item 45'},{name: 'item 46'},{name: 'item 47'},{name: 'item 48'}
-  ]
+  ],
 }
 
 export default App
