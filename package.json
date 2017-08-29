@@ -2,7 +2,6 @@
   "name": "tiny-custom-pagination",
   "version": "0.1.0",
   "main": "lib/index.js",
-  "license": "MIT License",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
@@ -96,5 +95,12 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "author": "freedom9x<freedom9x.@gmail.com>",
+  "homepage": "https://github.com/catamphetamine/react-responsive-ui#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catamphetamine/react-responsive-ui.git"
   }
 }
