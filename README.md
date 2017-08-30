@@ -1,10 +1,20 @@
 React pagination easy customize component. 
-# react-responsive-ui
+
+#  react-pagination-custom
 
 ![npm version](https://img.shields.io/npm/v/react-responsive-ui.svg?style=flat-square)(https://www.npmjs.com/package/tiny-custom-pagination)
 
 TinyPagination is a best customizable tiny component you can find. It only handle logic, and you feel free for edit styles of number buttons, wrap container, spread,.... 
 
+
+![Notes](https://user-images.githubusercontent.com/5037791/29863835-062d7c98-8d9b-11e7-8aa1-8da8dd13a90c.png)
+
+
+## Installation
+
+```
+npm install tiny-custom-pagination --save
+```
 
 ## Properties
 
@@ -26,20 +36,23 @@ TinyPagination is a best customizable tiny component you can find. It only handl
 | spreadStyle  | No     | Object     | Style of spread container
 
 
-
-![Notes](https://user-images.githubusercontent.com/5037791/29863835-062d7c98-8d9b-11e7-8aa1-8da8dd13a90c.png)
-
-
-## Installation
-
-```
-npm install tiny-custom-pagination --save
-```
-
 ## Usage
+```js
+<TinyPagination
+    total = {...}
+    selectedPageId = {...}
+    itemPerPage = {...}
+    renderBtnNumber = {...}
+    maxBtnNumbers = {...}
+    {...someOptionalProperties}
+  />
+```
+Demo:
 
 ![Demo](https://user-images.githubusercontent.com/5037791/29862587-20387b14-8d97-11e7-943f-e4e543e91694.gif)
 
+
+## Example
 ```js
 import React from 'react'
 import TinyPagination from 'tiny-custom-pagination'

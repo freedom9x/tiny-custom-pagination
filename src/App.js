@@ -1,7 +1,8 @@
 import React from 'react'
-import TinyPagination from 'components/TinyPagination'
+// import TinyPagination from 'components/TinyPagination'
 // import TinyPagination from './node_modules/components/TinyPagination'
 // import TinyPagination from './temp/TinyPagination/TinyPagination';
+import TinyPagination from 'tiny-custom-pagination'
 import './App.css'
 class App extends React.Component {
 

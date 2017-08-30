@@ -1,5 +1,12 @@
 {
  "private": true,
- "name": "tiny-custom-pagination",
- "main": "./TinyPagination.js"
+ "name": "react-pagination-custom",
+ "main": "./TinyPagination.js",
+ "author": "freedom9x<freedom9x.@gmail.com>",
+ "homepage": "https://github.com/catamphetamine/react-responsive-ui#readme",
+ "license": "MIT",
+ "repository": {
+   "type": "git",
+   "url": "git+https://github.com/catamphetamine/react-responsive-ui.git"
+ }
 }
