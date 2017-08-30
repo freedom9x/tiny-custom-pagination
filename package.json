@@ -1,5 +1,5 @@
 {
-  "name": "tiny-custom-pagination",
+  "name": "tiny-react-pagination",
   "version": "1.0.0",
   "main": "lib/index.js",
   "dependencies": {
