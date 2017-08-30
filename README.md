@@ -1,7 +1,7 @@
 React pagination easy customize component. 
 # react-responsive-ui
 
-[![npm version](https://img.shields.io/npm/v/react-responsive-ui.svg?style=flat-square)(https://www.npmjs.com/package/tiny-custom-pagination)
+![npm version](https://img.shields.io/npm/v/react-responsive-ui.svg?style=flat-square)(https://www.npmjs.com/package/tiny-custom-pagination)
 
 TinyPagination is a best customizable tiny component you can find. It only handle logic, and you feel free for edit styles of number buttons, wrap container, spread,.... 
 
@@ -136,4 +136,4 @@ Updating...
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE)
