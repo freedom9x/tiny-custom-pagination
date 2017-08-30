@@ -69,7 +69,6 @@ class App extends React.Component {
           wrapStyle = {{backgroundColor: '#ffffff'}}
           wrapClass = 'page-container'
           btnsClass = 'btns-container'
-          btnsStyle = {{border: '1px solid black'}}
           counterClass = 'counter-container'
           counterStyle = {{color: 'gray'}}
           spreadClass = 'spread-container'
