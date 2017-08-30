@@ -3,7 +3,7 @@ React pagination easy customize component.
 
 [![npm version](https://img.shields.io/npm/v/react-responsive-ui.svg?style=flat-square)(https://www.npmjs.com/package/tiny-custom-pagination)
 
-TinyPagination is a best customizable tiny component you can find. It only handle logic, and you feel free for edit style. 
+TinyPagination is a best customizable tiny component you can find. It only handle logic, and you feel free for edit styles of number buttons, wrap container, spread,.... 
 
 
 ## Properties
@@ -14,7 +14,7 @@ TinyPagination is a best customizable tiny component you can find. It only handl
 | total         | Yes      | Number       |Total of item list
 | selectedPageId| Yes      | Number       |Selected page number
 | itemPerPage   | Yes      | Number       |Maximum item per one page
-| renderBtnNumber| Yes     | Function     |Function return your button number component
+| renderBtnNumber| Yes     | Function     |Function return your customize button number component
 | maxBtnNumbers| Yes       | Number       |Maximum buttons number will be show. If total of buttons is more than, buttons will bi collapse
 | wrapStyle    | No     | Object     | Style of root container
 | wrapClass    | No     | String     | Class of root container
