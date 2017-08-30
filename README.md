@@ -13,7 +13,7 @@ TinyPagination is a best customizable tiny component you can find. It only handl
 ## Installation
 
 ```
-npm install tiny-custom-pagination --save
+npm install react-pagination-custom --save
 ```
 
 ## Properties
@@ -38,6 +38,9 @@ npm install tiny-custom-pagination --save
 
 ## Usage
 ```js
+import {TinyPagination} from 'react-pagination-custom'
+....
+....
 <TinyPagination
     total = {...}
     selectedPageId = {...}
