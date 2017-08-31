@@ -1,5 +1,6 @@
 import React from 'react';
-import {TinyPagination} from 'react-pagination-custom';
+// import {TinyPagination} from 'react-pagination-custom';
+import TinyPagination from './temp/TinyPagination';
 import './App.css';
 class App extends React.Component {
 
@@ -64,6 +65,8 @@ class App extends React.Component {
           itemPerPage = {itemPerPage}
           renderBtnNumber = {this.renderBtnNumber}
           maxBtnNumbers = {maxBtnNumbers}
+          preKey = 'PRE'
+          nextKey = 'NEXT'
           wrapStyle = {{backgroundColor: '#ffffff'}}
           wrapClass = 'page-container'
           btnsClass = 'btns-container'

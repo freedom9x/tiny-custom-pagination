@@ -26,6 +26,8 @@ npm install react-pagination-custom --save
 | itemPerPage   | Yes      | Number       |Maximum item per one page
 | renderBtnNumber| Yes     | Function     |Function return your customize button number component
 | maxBtnNumbers| Yes       | Number       |Maximum buttons number will be show. If total of buttons is more than, buttons will bi collapse
+| preKey      | Yes        | String     | Key of previous button
+| nextKey     | Yes        | String     | Key of next button
 | wrapStyle    | No     | Object     | Style of root container
 | wrapClass    | No     | String     | Class of root container
 | counterClass | No     | String     | Class of counter container
@@ -123,6 +125,8 @@ class App extends React.Component {
           itemPerPage = {itemPerPage}
           renderBtnNumber = {this.renderBtnNumber}
           maxBtnNumbers = {maxBtnNumbers}
+          preKey = 'PRE'
+          nextKey = 'NEXT'
           wrapStyle = {{backgroundColor: '#ffffff'}}
           wrapClass = 'page-container'
           btnsClass = 'btns-container'

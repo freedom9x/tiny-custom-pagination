@@ -1,0 +1,23 @@
+.root {
+    background: linear-gradient(to top,#fed835 20px,#ffeb3c 20px);
+    font-size: 30px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+}
+
+.tiny-pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.counter-container{
+    font-size: 11px;
+}
+
+.spread{
+    display: inline-block;
+}
