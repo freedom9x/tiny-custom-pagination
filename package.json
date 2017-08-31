@@ -1,6 +1,6 @@
 {
   "name": "react-pagination-custom",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "lib/index.js",
   "dependencies": {
     "autoprefixer": "7.1.2",
@@ -48,7 +48,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "prop-types": "^15.5.10",
-    "react-pagination-custom": "^1.0.2"
+    "react-pagination-custom": "^1.0.4"
   },
   "scripts": {
     "start": "node scripts/start.js",

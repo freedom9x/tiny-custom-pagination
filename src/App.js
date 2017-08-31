@@ -1,6 +1,5 @@
 import React from 'react';
-// import {TinyPagination} from 'react-pagination-custom';
-import TinyPagination from './temp/TinyPagination';
+import {TinyPagination} from 'react-pagination-custom';
 import './App.css';
 class App extends React.Component {
 

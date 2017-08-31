@@ -39,6 +39,8 @@ npm install react-pagination-custom --save
 
 
 ## Usage
+
+### App.js
 ```js
 import {TinyPagination} from 'react-pagination-custom'
 ....
@@ -49,8 +51,10 @@ import {TinyPagination} from 'react-pagination-custom'
     itemPerPage = {...}
     renderBtnNumber = {...}
     maxBtnNumbers = {...}
+    preKey = '...'
+    nextKey = '...'
     {...someOptionalProperties}
-  />
+/>
 ```
 Demo:
 
@@ -148,6 +152,19 @@ App.defaultProps = {
 }
 
 export default App
+```
+
+### App.css
+```css
+.page{
+  padding: 5px;
+  margin: 5px;
+}
+
+.page.selected-page{
+  background-color: gray;
+  color: white;
+}
 ```
 
 ## Contributing
