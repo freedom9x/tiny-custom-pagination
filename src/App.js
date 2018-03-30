@@ -1,5 +1,6 @@
 import React from 'react';
 import {TinyPagination} from 'react-pagination-custom';
+// import TinyPagination from './node_modules/components/TinyPagination'
 import './App.css';
 class App extends React.Component {
 
@@ -50,7 +51,7 @@ class App extends React.Component {
   render() {
     let {selectedPageId, list} = this.state;
     const itemPerPage = 5;
-    const maxBtnNumbers = 6;
+    const maxBtnNumbers = 10;
     let listShow = [...list];
     listShow = listShow.splice((selectedPageId - 1) * itemPerPage, itemPerPage);
     return (
@@ -73,6 +74,7 @@ class App extends React.Component {
           counterStyle = {{color: 'gray'}}
           spreadClass = 'spread-container'
           spreadStyle = {{padding: '0 5px'}}
+          maxBtnPerSide = {0}
         />
       </div>
     )

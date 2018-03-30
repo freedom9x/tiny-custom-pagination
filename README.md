@@ -29,6 +29,7 @@ npm install react-pagination-custom --save
 | maxBtnNumbers| Yes       | Number       |Maximum buttons number will be show. If total of buttons is more than, buttons will bi collapse
 | preKey      | Yes        | String     | Key of previous button
 | nextKey     | Yes        | String     | Key of next button
+| maxBtnPerSide | Yes      | Number       |Total of button in each side of selected button (default is 2)
 | wrapStyle    | No     | Object     | Style of root container
 | wrapClass    | No     | String     | Class of root container
 | counterClass | No     | String     | Class of counter container
