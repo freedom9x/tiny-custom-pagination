@@ -48,7 +48,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "prop-types": "^15.5.10",
-    "react-pagination-custom": "^1.0.4"
+    "react-pagination-custom": "^1.0.7"
   },
   "scripts": {
     "start": "node scripts/start.js",

@@ -1,6 +1,6 @@
 import React from 'react';
-import {TinyPagination} from 'react-pagination-custom';
-// import TinyPagination from './node_modules/components/TinyPagination'
+//import {TinyPagination} from 'react-pagination-custom';
+ import TinyPagination from './node_modules/components/TinyPagination'
 import './App.css';
 class App extends React.Component {
 
@@ -12,12 +12,12 @@ class App extends React.Component {
   }
 
   changePage(id){
-    this.setState((prevState, props) => { 
-      return { 
+    this.setState((prevState, props) => {
+      return {
         ...prevState,
-        selectedPageId: id 
+        selectedPageId: id
        }
-    });    
+    });
   }
 
   buttonPageClick(id){
